@@ -11,7 +11,6 @@ import {
   TouchableHighlight
 } from 'react-native';
 
-import { add } from '../actions/cosmetics'
 export class AppContainer extends Component {
 
 	constructor(props) {
