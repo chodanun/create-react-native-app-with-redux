@@ -11,11 +11,14 @@ import {
   TouchableHighlight
 } from 'react-native';
 
+import { add } from '../actions/cosmetics'
 export class AppContainer extends Component {
 
 	constructor(props) {
 	  super(props);
-	  // this.state = {num:0};
+	  //  this.state = {
+	  // 	num:0,
+	  // }
 	}
 
 	add(){
@@ -40,14 +43,14 @@ export class AppContainer extends Component {
 
 }
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators(ActionCreators, dispatch);
+const mapDispatchToProps = (dispatch) => {
+	return bindActionCreators(ActionCreators, dispatch)
 }
 
-function mapStateToProps(state) {
-  return { 
-  	num : state.num
-  };
+const mapStateToProps = (state) => {
+  	return {
+  		num : state.num
+  	}
 }
 
 
